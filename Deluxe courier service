@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deluxe Courier Service</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">Deluxe Courier</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#track">Track Shipment</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Homepage Section -->
+  <section id="home">
+    <div class="hero">
+      <h1>Welcome to Deluxe Courier Service</h1>
+      <p>Fast, Reliable, and Secure Delivery Services</p>
+      <a href="#services" class="cta-button">Explore Services</a>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Founded by Peter Paulinus JNR, Deluxe Courier Service is committed to providing top-notch logistics and delivery solutions worldwide.</p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="service-list">
+      <div class="service">
+        <h3>Same-Day Delivery</h3>
+        <p>Get your packages delivered within the same day.</p>
+      </div>
+      <div class="service">
+        <h3>International Shipping</h3>
+        <p>We deliver packages across the globe.</p>
+      </div>
+      <div class="service">
+        <h3>Package Tracking</h3>
+        <p>Track your shipment in real-time.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Track Shipment Section -->
+  <section id="track">
+    <h2>Track Your Shipment</h2>
+    <form id="track-form">
+      <input type="text" placeholder="Enter Tracking Number" required>
+      <button type="submit">Track</button>
+    </form>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form id="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Deluxe Courier Service. All Rights Reserved.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
+
+
+
+/* styles.css */
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: #333;
+  color: white;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background: #007BFF;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Section Styles */
+section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#services .service-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+#services .service {
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 5px;
+  width: 250px;
+}
+
+form input, form textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background: #007BFF;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #0056b3;
+}
+
+/* Footer Styles */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+
+
+// scripts.js
+
+// Track Shipment Form
+document.getElementById('track-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  alert('Tracking number submitted! Please wait for details.');
+});
+
+// Contact Us Form
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  alert('Your message has been sent! Thank you for reaching out.');
+});
